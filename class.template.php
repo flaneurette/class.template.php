@@ -3,7 +3,7 @@
 class myclass {
 
 
-	const MAX 		= 10000; //constants
+	const MAX 	= 10000; //constants
 	private $var 	= 0; // private variable
 	
 	public function __construct($params = array()) 
@@ -27,14 +27,14 @@ class myclass {
 	* @throws Exception
 	*/	
 	
-    public function init($params)
-    {
+    	public function init($params)
+    	{
 		try {
 			isset($params['var'])  ? $this->var  = $params['var'] : false; 
 			} catch(Exception $e) {
 			$this->message('Problem initializing:'.$e->getMessage());
 		}
-    }
+    	}
 	
 	/**
 	* shows a message to the user.
@@ -43,7 +43,7 @@ class myclass {
 	*/
 	public function message($string) 
 	{
-			return echo $string;
+		return $string;
 	}	
 
 	/**
