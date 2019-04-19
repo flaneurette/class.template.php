@@ -3,8 +3,8 @@
 class myclass {
 
 
-	const MAX 	= 10000; //constants
-	private $var 	= 0; // private variable
+	const MINMAX 	= 10000; // Constants. Call it within the class:  self::MINMAX
+	private $var 	= 0; // Private variable
 	
 	public function __construct($params = array()) 
 	{ 
